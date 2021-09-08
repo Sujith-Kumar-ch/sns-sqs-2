@@ -5,7 +5,7 @@ terraform {
 
   terraform {
   backend "s3" {
-    bucket = "sujithbucket1"
+    bucket = "sns-sqs-1"
     key    = "path/terraform.tfstate"
     region = "ap-south-1"
 
