@@ -4,9 +4,9 @@ terraform {
   required_version = ">= 0.12.24"
 
   backend "s3" {
-    bucket = "cloudquickpocsbackendtf"
+    bucket = "sns-sqs-1"
     key    = "quickcloudpocsbackend_2.tfstate"
-    region = "us-east-1"
+    region = "ap-south-1"
   }
 }
 
@@ -15,6 +15,6 @@ provider "random" {}
 
 ## Provider us-east-1
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
